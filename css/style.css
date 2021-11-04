@@ -9,7 +9,17 @@ html {
  body{
  	background-color: white;
  } 
-
+h1{
+	font-family: 'Public Sans', sans-serif;
+	font-size: 4rem;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 2rem;
+	margin-bottom: 2.5rem;
+}
+p{
+	font-family: 'Oswald', sans-serif;
+}
 .imagenHero{
 background-image: url('../img/hero2.jpg');
 height: 70rem;
@@ -54,4 +64,98 @@ li {
 	justify-content: center;
 	margin-left: 4rem;
 	text-decoration: none;
+}
+.contenedorOferta{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 2rem;
+}
+.contenedorOferta__Menu1{
+	display: flex;
+	flex-direction: column;
+	height: 55rem;
+	background-color: #8b0409;
+	width: 30%;
+	margin-left: 5rem;
+	margin-top: 5rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.contenedorOferta__Titulo{
+	font-family: 'Public Sans', sans-serif;
+	color: white;
+	font-size: 3.3rem;	
+	font-weight: 700;	
+	margin-bottom: .5rem;
+	text-align: center;	
+}
+.contenedorOferta__Subtitulo{
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	font-size: 1.6rem;
+	text-align: center;
+}	
+.ContenedorEntrantes{
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	height: 3rem;
+}
+.contenedorOferta__TituloMenu{
+	font-size: 1.8rem;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	color: white;
+	text-align: center;
+}
+.contenedorOferta__contenido{
+	font-size: 1.4rem;
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	text-align: center;
+	margin-top: .5rem;
+}
+.contenedorPrincipales{
+	margin-top: 2rem;
+}
+.contenedorOferta__precioAnterior{
+	font-size: 2.3rem;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	color: white;
+	text-align: center;
+	margin-top: 1.5rem;
+}
+.contenedorOferta__precio{
+	font-size: 3rem;
+	font-family: 'Public Sans', sans-serif;
+	font-weight: 700;
+	color: white;
+	margin-top: 1rem;}
+
+.contenedorOferta__Menu2{
+	display: flex;
+	flex-direction: column;
+	height: 65rem;
+	background-color: #640202;
+	width: 35%;
+	align-items: center;
+	justify-content: center;
+}
+.contenedorPrincipales2{
+	margin-top: 5rem;
+}
+.contenedorPrincipales3{
+	margin-top: 2rem;
+}
+.contenedorOferta__Menu3{
+	display: flex;
+	flex-direction: column;
+	height: 55rem;
+	background-color: #8b0409;
+	width: 30%;
+	margin-top: 5rem;
+	align-items: center;
+	justify-content: center;
+	margin-right: 5rem;
 }
