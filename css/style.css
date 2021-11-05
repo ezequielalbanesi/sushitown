@@ -1,48 +1,38 @@
 * {
   padding: 0;
-  margin: 0; }
-
-html {
-  font-size: 62.5%;
-  box-sizing: border-box; }
-
- body{
- 	background-color: white;
- } 
-h1{
-	font-family: 'Public Sans', sans-serif;
-	font-size: 4rem;
-	font-weight: 700;
-	text-align: center;
-	margin-top: 2rem;
-	margin-bottom: 2.5rem;
-}
-p{
-	font-family: 'Oswald', sans-serif;
+  margin: 0;
+ }
+html{
+	box-sizing: border-box;
+	font-size: 62.5%;
 }
 .imagenHero{
 background-image: url('../img/hero2.jpg');
-height: 70rem;
+height: 55rem;
 background-repeat: no-repeat;
 background-size: cover;
 }
-
+@media (min-width: 1024px) {
+  .imagenHero {
+ height: 70rem;
+ } }
 .contenedorNavegador{
 	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-around;
 }
-
 .logo{
-	margin-left: 3rem;
+	justify-content: center;
 	display: flex;
-	height: 20rem;
+	height: 15rem;
 }
 .contendorNav{ 
-	height: 20rem;
+	height: 15rem;
 	display: flex;
 	align-items: center;
-	margin-left: 27rem;
-
 }
+
 ul li a{
 	text-decoration: none;
 	font-size: 2.5rem;
@@ -65,6 +55,18 @@ li {
 	margin-left: 4rem;
 	text-decoration: none;
 }
+h1{
+	font-family: 'Public Sans', sans-serif;
+	font-size: 4rem;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 2rem;
+	margin-bottom: 2.5rem;
+}
+p{
+	font-family: 'Oswald', sans-serif;
+}
+
 .contenedorOferta{
 	display: flex;
 	flex-direction: row;
@@ -81,7 +83,6 @@ li {
 	align-items: center;
 	justify-content: center;
 }
-
 .contenedorOferta__Titulo{
 	font-family: 'Public Sans', sans-serif;
 	color: white;
@@ -95,7 +96,7 @@ li {
 	color: white;
 	font-size: 1.6rem;
 	text-align: center;
-}	
+}
 .ContenedorEntrantes{
 	margin-top: 1rem;
 	margin-bottom: 2rem;
@@ -120,7 +121,7 @@ li {
 }
 .contenedorOferta__precioAnterior{
 	font-size: 2.3rem;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Public Sans', sans-serif; 
 	font-weight: 700;
 	color: white;
 	text-align: center;
@@ -128,11 +129,11 @@ li {
 }
 .contenedorOferta__precio{
 	font-size: 3rem;
-	font-family: 'Public Sans', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	font-weight: 700;
 	color: white;
-	margin-top: 1rem;}
-
+	margin-top: .5rem;
+}
 .contenedorOferta__Menu2{
 	display: flex;
 	flex-direction: column;
@@ -158,4 +159,140 @@ li {
 	align-items: center;
 	justify-content: center;
 	margin-right: 5rem;
+}
+.contenedorImagenes{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-top: 10rem;
+}
+@media (min-width: 1024px) {
+  .contenedorImagenes {
+    flex-direction: row;} 
+}
+
+
+.ContenedorImagenes__contenedor{
+	width: 100%
+	margin-right:  1.5rem;
+	margin-left: 1.5rem;
+	
+}
+
+.ContenedorImagenes__contenedor--imagen{
+	display: flex;
+	justify-content: center;
+}
+
+.contenedorImagenes__Imagen{
+	width: 30rem;
+	height: 15rem;
+}
+h4{
+	font-size: 2.5rem;
+	font-family: 'Public Sans', sans-serif;
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+.contenedorImagenes__texto{
+		font-family: 'Oswald', sans-serif;
+		font-size: 1.5rem;
+		text-align: center;
+		margin-bottom: 3rem;
+}
+.contenedorImagenes__dibujo{
+
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5rem;
+}
+.contenedorImagenes__dibujo--contenedor{
+	background-color: black;
+	border-radius: 10rem;
+	height: 8rem;
+	width: 8rem;
+}
+.contenedorImagenes__dibujo--parrafo{
+	display: flex;
+	justify-content: center;
+	height: 7.5rem;
+	align-items: center;
+}
+.contenedorImagenes__dibujo--viñeta{
+	font-family: 'Oswald', sans-serif;
+	font-size: 2.5rem;
+	color: white;
+	font-weight: 700;
+	text-decoration: none;
+}
+.contenedorMapahora{
+	display: flex;
+	flex-direction: row;
+	background-color: #8b0409;
+	margin-bottom: 5rem;
+
+}
+.contenedorMapahora__mapa{
+	display: flex;
+	justify-content: center;
+	width: 70%;
+}
+.contenedorMapahora__hora{
+	display: flex;
+	flex-direction: column;
+	width: 30%
+}
+h5{
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 3rem;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+.contenedorMapahora__hora--dia{
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5rem;
+	text-align: center;
+	margin-top: .6rem;
+	margin-bottom: .6rem;
+}
+hr{
+	border: .1rem dashed white; 
+}
+footer{
+	background-color: black;
+	height: 20rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+.footerContenedor{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 33%;
+	border-right: .1rem dashed white;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+.footerContenedor__Redes{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 33%;
+}
+.footerContenedor__Redes--Logos{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.redesSoc{
+	height: 5rem;
+	width: 5rem;
+	margin-left: 1rem;
 }
