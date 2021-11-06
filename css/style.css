@@ -25,8 +25,12 @@ background-size: cover;
 .logo{
 	justify-content: center;
 	display: flex;
-	height: 15rem;
+	height: 20rem;
 }
+@media (min-width: 1024px) {
+  .logo {
+ height: 15rem;
+ } }
 .contendorNav{ 
 	height: 15rem;
 	display: flex;
@@ -41,7 +45,7 @@ ul li a{
 	font-weight: 700;	
 }
 .linkInicio{
-	color: white;
+	color: black;
 }
 .orderlist{
 	display: flex;
@@ -230,13 +234,14 @@ h4{
 	display: flex;
 	flex-direction: row;
 	background-color: #8b0409;
-	margin-bottom: 5rem;
+	border: solid 1px black;
 
 }
 .contenedorMapahora__mapa{
 	display: flex;
 	justify-content: center;
 	width: 70%;
+	border: solid 1px black;
 }
 .contenedorMapahora__hora{
 	display: flex;
@@ -264,8 +269,8 @@ hr{
 	border: .1rem dashed white; 
 }
 footer{
-	background-color: rgba(105, 4, 4, 0.8);
-	height: 20rem;
+	background-color: #640202;
+	height: 23rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -278,7 +283,7 @@ footer{
 	width: 33%;
 	border-right: .1rem dashed white;
 	margin-top: 2rem;
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
 }
 .footerContenedor__Redes{
 	display: flex;
@@ -344,7 +349,7 @@ textarea{
 
 }
 .navegador2{
-	background-color: rgba(105, 4, 4, 0.8);
+	background-color: white;
 }
 .imagenfondo{
 	background-image: url('../img/hero.jpg');
@@ -357,3 +362,147 @@ textarea{
 	padding: 2.5rem;
 	color: white;
 }
+.imagenNosotros{
+	background-image: url('../img/nosotros2.jpg');
+	height: 41rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.contenedor__Nosotros{
+	margin: 2rem;
+	display: flex;
+	flex-direction: row;
+	height: 25rem;
+	align-items: center;
+}
+.contenedorNosotros--Contenedor{
+	width: 100%;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+.contenedorNosotros--Contenedor--titulo{
+	font-size: 3rem;
+	text-align: center;
+	margin-right: 2rem;
+}
+.contenedorNosotros--Contenedor--parrafo{
+	font-size: 1.8rem;
+	text-align: center;
+}
+h2{
+	font-size: 3rem;
+	text-align: center;
+	margin-right: 2rem;
+	font-family: 'Public Sans', sans-serif;
+	font-weight: 700;
+	margin-top: 2rem;
+	margin-bottom: 2.5rem;
+}
+.contenedorNosotros--Contenedor--Imagen{
+	display: flex;
+	justify-content: center;
+}
+.contenedorNosotros--imagen{
+	height: 20rem;
+	width: 70%;
+
+}
+.contenedorNosotros--imagen:hover {
+	cursor: pointer;
+	width: 100%;
+	height: 25rem;
+	transition: width 2s, height 2s;
+}
+.imagenTaway{
+	background-image: url('../img/tawayfondo.jpg');
+	height: 50rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+}
+.contenedorTakeAway{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	height: 70rem;
+}
+@media (min-width: 1024px) {
+  .contenedorTakeAway {
+	display: flex;
+	flex-direction: row;
+	height: 50rem;
+ }
+}
+.contenedorTakeAway__texto{
+	width: 50%;
+}
+.contenedorTakeAway__fotos{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+@media (min-width: 1024px) {
+  .contenedorTakeAway__fotos {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+ }
+}
+ .contenedorTakeAway__texto--titulo{
+	font-size: 3rem;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 1.5rem;
+	margin-bottom: 2.5rem;
+}
+.contenedorTakeAway__texto--parrafo{
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: 2.5rem;
+	margin-left: 1rem;
+	margin-right: 2rem;
+}
+
+.contenedorTakeAway__texto--imagen{
+	height: 30rem;
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+}
+.contenedorTakeAway__fotos {
+	width: 100%;
+	margin-right: 2rem;
+	margin-left: 2rem;
+ }
+ @media (min-width: 1024px) {
+ .contenedorTakeAway__fotos {
+	width: 50%;
+
+ }
+}
+.contenedorTakeAway__imagenes--imagen{
+	height: 15rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+
+}
+@media (min-width: 1024px) {
+  .contenedorTakeAway__imagenes--imagen {
+	height: 24rem;
+
+ }
+}
+.contenedorTakeAway__imagenes{
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	margin-top: 2.5rem;
+}
+.contenedorTakeAway__imagen{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+
