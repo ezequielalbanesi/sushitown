@@ -1,11 +1,13 @@
 * {
   padding: 0;
   margin: 0;
+
  }
 html{
 	box-sizing: border-box;
 	font-size: 62.5%;
 }
+
 h1{
 	font-family: 'Public Sans', sans-serif;
 	font-size: 4rem;
@@ -292,44 +294,85 @@ hr{
 }
 .imagenfondo{
 	background-image: url('../img/hero.jpg');
-	height: 80rem;
+	height: 120rem;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+@media (min-width: 1024px) {
+  .imagenfondo {
+	height: 80rem;
+ }
+}
 .tituloContacto{
+	padding: 8rem;
+	color: white;
+}
+@media (min-width: 1024px) {
+  .tituloContacto {
 	margin-top: 0rem;
 	padding: 2.5rem;
 	color: white;
+ }
 }
 .contenedorContacto{
 		display: flex;
+		height: 90rem;
 		justify-content: center;
+		align-items: center;
+}
+@media (min-width: 1024px) {
+  .contenedorContacto {
+	height:40rem;
+	align-items: flex-start;
+ }
 }
 .contenedorContacto__Formulario{
-	height: 48rem;
-	width: 35%;	
+	height: 70rem;
+	width: 45%;	
 	margin-bottom: 3rem;
 	padding: 4rem;
 	border: .5rem groove gray;
 }
+@media (min-width: 1024px) {
+  .contenedorContacto__Formulario {
+	height: 50rem;
+ }
+}
 .contenedorContacto__etiquetas{
 	display: flex;
 	flex-direction: column;
+	
 }
 input{
-	margin-bottom: 2rem;
-	padding: .5rem;
+	margin-bottom: 5rem;
+	padding: 1.5rem;
 	border: .2rem groove gray;
 }
+@media (min-width: 1024px) {
+  input {
+	padding: 1rem;
+	margin-bottom: 2.5rem;
+ }
+}
 label{
-	font-size: 1.8rem;
+	font-size: 2.2rem;
 	font-weight: 700;
 	margin-bottom: .5rem;
 	color: white;
 }
+@media (min-width: 1024px) {
+  label {
+	font-size: 1.8rem;
+ }
+}
 textarea{
 	margin-bottom: 3rem;
 	border: .2rem groove gray;
+}
+@media (min-width: 1024px) {
+  textarea {
+	margin-bottom: 1.5rem;
+ }
 }
 .boton{
 	height: 4.5rem;
